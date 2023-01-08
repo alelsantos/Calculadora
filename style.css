@@ -1,0 +1,62 @@
+.flex{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.opção{
+    display: flex;
+    flex-direction: column;
+    width: 33%;
+}
+.opção input[type="text"]{
+    width: 90%;
+    height: 30px;
+}
+.opção select{
+    width: 92%;
+    height: 37px;
+}
+
+#calcular{
+    background-color: rgba(14, 70, 92, 0.918);
+    color: white;
+    text-align: center;
+    width: 97.4%;
+    height: 50px;
+    margin-bottom: 70px;
+}
+
+.resultados{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 550px;
+    margin-bottom: 5px;
+}
+.resultados input{
+    margin-right: 550px;
+    pointer-events: none;
+}
+
+@media screen and (max-width: 700px) {
+    .flex{
+        flex-direction: column;
+        margin-bottom: 0;
+    }
+    .opção{
+        width: 100%;
+        margin-left: 20px;
+        margin-bottom: 10px;
+    }
+    #calcular{
+        margin-left: 20px;
+        width: 91.5%;
+        height: 50px;
+    }
+    .resultados{
+        margin-left: 100px;
+    }
+    .resultados input{
+        margin-right: 70px;
+    }
+}
