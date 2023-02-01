@@ -9,32 +9,48 @@
     <script src="script.js" defer></script>
 </head>
 <body>
-    <div>
+    <p>
+        Nossa calculadora foi pensada para que você possa simular e converter as dimensões da sua embalagem para as nossas quantidades mínimas de produção.
+            Trabalhamos com embalagens que variam de 4 a 150 centímetros, e uma das menores quantidades mínimas do mercado, apenas 100 quilos para liso e impressos até 4 cores!"
+    </p>
+    <p>
+            Para calcular, basta preencher as dimensões da embalagem pretendida (largura, altura, espessura). E a característica do material liso (sem impressão) ou impresso.
+            Caso não saiba, sugerimos que se baseie pela tabela abaixo:
+    </p>
+    <p>
+            0,06 a 0,12 - Embalagens para produtos e alimentos secos e não pesados, como temperos, canetas, brinquedos leves, acessórios etc.
+            acima de 0,13 - Embalagens reforçadas
+    </p>
+    <p>
+            Para qualquer outra dúvida, conte com nossa equipe de vendas.
+            Desenvolva sua embalagem com a gente!!
+    </p>
+    <div id="calculadora">
         <span>Dados da Embalagem</span>
-        <div class="flex">
+
             <div class="opção">
-                <label>Altura (cm)</label>
+                <label class="dados">Altura(cm)</label>
                 <input type="number" id="altura" placeholder="Insira a Altura" step="0.01" min="4.00">
             </div>
             <div class="opção">
-                <label>Largura (cm)</label>
+                <label class="dados">Largura (cm)</label>
                 <input type="number" id="largura" placeholder="Insira a Largura" step="0.01" min="4.00">
             </div>
             <div class="opção">
-                <label>Espessura (micras)</label>
+                <label class="dados">Espessura (micras)</label>
                 <input type="number" id="espessura" placeholder="Insira a Espessura" step="0.001">
             </div>
-        </div>
-        <div class="flex">
+
+
             <div class="opção">
-                <label>Modelo</label>
+                <label class="dados">Modelo</label>
                 <select onchange="colors()" id="modelo">
                     <option>Impresso</option>
                     <option>Liso</option>
                 </select>
             </div>
             <div class="opção">
-                <label>Quantas Cores?</label>
+                <label class="dados">Quantas Cores?</label>
                 <select id="cores">
                     <option>1</option>
                     <option>2</option>
@@ -45,7 +61,7 @@
                 </select>
             </div>
             <div class="opção">
-                <label>Tipo do Material<label>
+                <label class="dados">Tipo do Material</label>
                 <select id="material">
                     <option>PEBD</option>
                     <option>PEAD</option>
@@ -55,11 +71,11 @@
                     <option>NYLON</option>
                 </select>
             </div>
-        </div>
+
        
         <button id="calcular">CALCULAR</button>
         <div class="resultados">
-            <label>Quantidade Mínima (und):</label>
+            <label>Quantidade Mínima Aproximada (mil):</label>
             <input type="text" id="resultados">
         </div>
     </div>
