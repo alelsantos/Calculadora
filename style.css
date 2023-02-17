@@ -85,4 +85,7 @@ span{
     .opção select{
         width: 95%;
     }
+    #calcular{
+        width: 50%;
+    }
 }
