@@ -9,16 +9,25 @@
     <script src="script.js" defer></script>
 </head>
 <body>
-    <h1>
-        Descubra a quantidade mínima por item!
-    </h1>
     <p>
-        Informe abaixo os dados da embalagem, que pretende pedir, <br>e descubra qual a quantidade mínima necessária para conseguirmos atender sua empresa.
+        Nossa calculadora foi pensada para que você possa simular e converter as dimensões da sua embalagem para as nossas <br> quantidades mínimas de produção.
     </p>
-
     <p>
-        Se precisar de suporte ou tiver dúvidas, conte com nossa equipe de vendas <br>
-        pelo Telefone (19) 3256-5731 ou WhatsApp (19) 9 9557-9974.
+            Trabalhamos com embalagens que variam de 4 a 150 centímetros, e uma das menores quantidades mínimas do mercado, <br> apenas 100 quilos para liso e impressos até 4 cores!
+    </p>
+    <p>
+            Para calcular, basta preencher as dimensões da embalagem pretendida (largura, altura, espessura). E a característica do <br>material liso (sem impressão) ou impresso.
+    </p>
+    <p>
+            Caso precise, sugerimos que se baseie pela tabela abaixo:
+    </p>
+    <p>
+            Espessura: <b>0,06 a 0,12</b> - Embalagens para produtos e alimentos secos e não pesados<br> como temperos, canetas, brinquedos leves, acessórios etc. <br>
+            <b>Acima de 0,13</b> - Embalagens reforçadas
+    </p>
+    <p>
+            Para qualquer outra dúvida, conte com nossa equipe de vendas. <br>
+            Desenvolva sua embalagem com a gente!!
     </p>
     <div id="calculadora">
         <span>Dados da Embalagem</span>
@@ -33,7 +42,7 @@
             </div>
             <div class="opção">
                 <label class="dados">Espessura (micras)</label>
-                <input type="number" id="espessura" placeholder="Insira a Espessura" step="0.001">
+                <input type="number" id="espessura" placeholder="Insira a Espessura Formato: 0,07" step="0.001">
             </div>
 
 
@@ -70,7 +79,7 @@
        
         <button id="calcular">CALCULAR</button>
         <div class="resultados">
-            <label>Quantidade Mínima Aproximada (UND):</label>
+            <label>Quantidade Mínima Aproximada (mil):</label>
             <input type="text" id="resultados">
         </div>
     </div>
